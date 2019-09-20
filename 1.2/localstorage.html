@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 50px;">
+      <input id="inputfield" type="text" />
+      <button id="save">save</button>
+      <button id="load">load</button>
+      <button id="remove" style="background-color: red;">remove</button>
+      <div id="output" style="margin-top:50px; font-size:40px;">
+        You haven't pressed a button yet
+      </div>
+    </div>
+    <script>
+      const input = document.getElementById("inputfield");
+      const output = document.getElementById("output");
+      const save = document.getElementById("save");
+      const load = document.getElementById("load");
+      const remove = document.getElementById("remove");
+
+      save.onclick = ev => {
+        console.log(`saving ${input.value}...`);
+        localStorage.setItem("savedItem", input.value);
+      };
+
+      load.onclick = ev => {
+        if (!localStorage.savedItem) {
+          output.innerHTML = "Nothing in localstorage";
+        } else {
+          output.innerHTML = localStorage.getItem("savedItem");
+        }
+      };
+
+      remove.onclick = ev => {
+        localStorage.removeItem("savedItem");
+      };
+    </script>
+  </body>
+</html>

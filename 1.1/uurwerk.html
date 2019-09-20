@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <div id="clock"><span id="clocktime">dd</span></div>
+    <script>
+      const time = () => new Date().toLocaleTimeString().replace(/:\d+ /, " ");
+      const get_colors = () => {
+        const date = new Date();
+        const a = date.getHours();
+        const b = date.getMinutes();
+        return "rgb(" + [a, b, 255].join(",") + ")";
+      };
+      
+      let clock = document.getElementById("clock");
+      let clocktime = document.getElementById("clocktime");
+
+      clocktime.innerHTML = time();
+      clock.style.backgroundColor = get_colors();
+
+      setInterval(() => {
+        clocktime.innerHTML = time();
+        clock.style.backgroundColor = get_colors();
+      }, 1000);
+    </script>
+  </body>
+</html>
