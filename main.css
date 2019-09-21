@@ -88,3 +88,23 @@ section {
         margin: 50px auto;
     }
 }
+
+@media only screen and (max-width: 768px){
+    .timer-btn{
+        margin-top: 0px;
+        padding: 3px;
+        display: inline-block;
+    }
+    .timer-btn a {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    .timer-btn{
+        margin-top: 30px;
+    }
+    .timer-btn a{
+        width:  210px;
+    }
+}

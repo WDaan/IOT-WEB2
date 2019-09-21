@@ -154,36 +154,45 @@
                 />
               </field>
             </div>
-            <div class="column" style="margin-top: 30px;">
+          </div>
+          <div class="columns">
+            <div class="column timer-btn">
               <a
                 class="button is-primary is-inverted"
-                style="width: 100px;"
                 onclick="startTimer()"
               >
                 start
               </a>
+            </div>
+            <div class="column timer-btn">
               <a
                 class="button is-danger is-inverted"
-                style="width: 100px;"
                 onclick="stopTimer()"
               >
                 stop
               </a>
+            </div>
+            <div class="column timer-btn">
               <a
-                class="button is-info is-inverted"
-                style="width: 100px;"
+                class="button is-info is-inverted"          
                 onclick="resetTimer()"
               >
                 reset
               </a>
             </div>
           </div>
+          </div>  
         </div>
       </div>
       <div id="wekker" class="card">
         <div class="card-content"><span id="wekkerTime">00:00</span></div>
       </div>
-      <progress id="progress" class="progress is-info" value="0"></progress>
+      <progress
+        style="margin-top: 40px;"
+        id="progress"
+        class="progress is-info"
+        value="0"
+      ></progress>
     </section>
     <script src="js/wekker.js"></script>
     <footer>
