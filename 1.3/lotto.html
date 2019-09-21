@@ -10,11 +10,14 @@
     <div
       style="align-content: center; text-align: center; margin-bottom: 50px;"
     >
+    <h1>Generate 6 random numbers</h1>
       <button id="generate">generate</button>
     </div>
     <script>
       const body = document.getElementsByTagName("body")[0];
       const generate = document.getElementById("generate");
+
+      //generate & set the numbers
       generate.onclick = ev => {
         let arr = [];
         while (arr.length < 6) {
@@ -24,11 +27,13 @@
         setNumbers(arr);
       };
 
+      // create table
       const table = document.createElement("table");
       table.style.width = "100%";
       table.style.height = "100px";
       table.setAttribute("border", 1);
       const tbody = document.createElement("tbody");
+      //create table data
       for (let i = 0; i < 6; i++) {
         const tdata = document.createElement("td");
         tdata.id = i;
@@ -37,9 +42,10 @@
       table.append(tbody);
       body.append(table);
 
+      //sets the numbers in the table
       const setNumbers = arr => {
-        console.log(tbody);
-        tbody.forEach(el => (el.innerHTML = arr[i]));
+        const tds = document.querySelectorAll("td");
+        tds.forEach((el, index) => (el.innerHTML = arr[index]));
       };
     </script>
   </body>
