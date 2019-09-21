@@ -1,8 +1,12 @@
 /* GLOBAL */
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
    align-content : center;
    text-align: center;
-   margin: 0px auto;
+   margin: 50px auto;
 }
 
 
@@ -81,6 +85,6 @@ section {
     #wekker {
         font-size: 50px;
         max-width: 80%;
-        margin: 0 auto;
+        margin: 50px auto;
     }
 }
