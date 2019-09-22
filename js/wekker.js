@@ -1,11 +1,16 @@
 let totalSeconds = 0;
-let inititalTotalSeconds = 0;
+let inititalTotalSeconds = 0; //necessary for keeping track of progress
 let wekker = document.getElementById("wekker");
 let wekkerTime = document.getElementById("wekkerTime");
 let progress = document.getElementById("progress");
 
 let timer;
 let finished_interval;
+
+//check if keyboard input value isn't bigger than 59
+function checkNumber(input) {
+  if (input.value > 59) input.value = 59;
+}
 
 function runTimer() {
   return window.setInterval(() => {
@@ -23,8 +28,6 @@ function runTimer() {
 
     if (totalSeconds <= 0) {
       clearInterval(timer);
-      document.getElementById("timer_input_seconds").innerHTML = 0;
-      document.getElementById("timer_input_minutes").innerHTML = 0;
       finished();
     }
   }, 1000);

@@ -130,6 +130,7 @@
                   >Minutes</label
                 >
                 <input
+                oninput="checkNumber(this)"
                   min="0"
                   max="59"
                   id="timer_input_minutes"
@@ -145,8 +146,9 @@
                   >Seconds</label
                 >
                 <input
+                oninput="checkNumber(this)"
                   min="0"
-                  max="60"
+                  max="59"
                   id="timer_input_seconds"
                   type="number"
                   style="width:150px; text-align: center;"
@@ -195,8 +197,8 @@
       ></progress>
     </section>
     <script src="js/wekker.js"></script>
-    <footer>
-      blablabla TODO
+    <footer style="text-align: center">
+      This page was made by Daan Wijns
     </footer>
     <script src="scrolling.js"></script>
   </body>
