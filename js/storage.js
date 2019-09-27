@@ -21,7 +21,8 @@ function addNote() {
 
   if (text !== "") {
     //remove empty message on first note add
-    if (localStorage.getItem("notes") === null) {
+    let notes = localStorage.getItem("notes");
+    if (notes.length <= 2 || notes === null) {
       const empty = document.getElementById("empty_notes");
       empty.parentNode.removeChild(empty);
     }
@@ -71,7 +72,6 @@ function drawNote(note) {
   icon.classList.add("fas", "fa-trash-alt");
   button.appendChild(icon);
 
-  
   //add both to columns
   columns.appendChild(column1);
   columns.appendChild(button);
@@ -123,21 +123,18 @@ function deleteNote(id) {
   localStorage.setItem("notes", JSON.stringify(notes));
 
   //if there are no notes left, reset id;
-  if (notes.length === 0) localStorage.setItem("id", 0);
+  if (notes.length === 0) {
+    localStorage.setItem("id", 0);
+    drawEmpty();
+  }
 }
 
 //check if there are already notes in local storage, if not show a card with appropriate message
 window.onload = ev => {
-  if (localStorage.getItem("notes") === null) {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.id = "empty_notes";
-    const card_content = document.createElement("div");
-    card_content.classList.add("card-content");
-    card_content.innerHTML = "No notes were found";
-    card.appendChild(card_content);
-
-    notes_container.appendChild(card);
+  //2 because 2 brackets in stringyfied aray.
+  let notes = localStorage.getItem("notes");
+  if (notes.length <= 2 || notes === null) {
+    drawEmpty();
   } else {
     //if not empty draw previous entered notes
     const notes = JSON.parse(localStorage.getItem("notes"));
@@ -146,3 +143,16 @@ window.onload = ev => {
     });
   }
 };
+
+//draw empty note message
+function drawEmpty() {
+  const card = document.createElement("div");
+  card.classList.add("card");
+  card.id = "empty_notes";
+  const card_content = document.createElement("div");
+  card_content.classList.add("card-content");
+  card_content.innerHTML = "No notes were found";
+  card.appendChild(card_content);
+
+  notes_container.appendChild(card);
+}

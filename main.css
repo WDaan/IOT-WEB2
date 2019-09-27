@@ -22,9 +22,9 @@ section {
     }  
 }
 
-@media only screen and (min-width: 2600px){
+@media only screen and (min-width: 1600px){
     section {
-        width:  900px;
+        width:  700px;
     }  
 }
 
@@ -87,16 +87,13 @@ section {
         max-width: 80%;
         margin: 50px auto;
     }
-}
-
-@media only screen and (max-width: 768px){
     .timer-btn{
         margin-top: 0px;
         padding: 3px;
         display: inline-block;
     }
     .timer-btn a {
-        width: 100px;
+        width: 90px;
     }
 }
 
