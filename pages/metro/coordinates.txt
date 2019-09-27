@@ -1,0 +1,29 @@
+Erasmus
+61,690
+
+Het rad
+170,690
+
+Veeweide
+200,656
+
+Beekkant
+200, 360
+
+Zwarte Vijvers
+230, 350
+
+Merode
+675, 350
+
+Thieffry
+695,370
+
+Hankar
+760,495
+
+Delta
+810, 510
+
+Hermann-Debroux
+913,510
