@@ -11,6 +11,11 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Nanum+Gothic:400,700,800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="main.css" />
     <script
       defer
@@ -36,7 +41,7 @@
           aria-expanded="false"
           data-target="navbarBasicExample"
           onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');"
-          >
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -47,162 +52,51 @@
           <a href="#home-section" class="navbar-item">
             Home
           </a>
-          <a href="#uurwerk-section" class="navbar-item">
-            Clock
+          <a href="#animate-section" class="navbar-item">
+            Animate
           </a>
-          <a href="#notes-section" class="navbar-item">
-            Notes
+          <a href="#css-section" class="navbar-item">
+            css
           </a>
-          <a href="#lotto-section" class="navbar-item">
-            Lotto
-          </a>
-          <a href="#wekker-section" class="navbar-item">
-            Keukenwekker
-          </a>
-          <a href="/pages/metro/metro.html" class="navbar-item">
-            Metro
+          <a href="#traversing-section" class="navbar-item"> traversing </a
+          ><a href="#menu-section" class="navbar-item">
+            menu
           </a>
         </div>
       </div>
     </nav>
+    <!-- Home -->
     <section id="home-section" class="section header">
       <div class="container">
         <h1 class="title is-1">
-          Webontwerp 2 & IOT!
+          JQuery!
         </h1>
       </div>
     </section>
-    <!--Uurwerk-->
-    <section id="uurwerk-section">
+    <!-- Animate -->
+    <section id="animate-section">
       <h1 class="subtitle is-3">
-        1.1 Uurwerk
+        2.1 Animate
       </h1>
-      <div id="clock" class="card">
-        <div class="card-content"><span id="clocktime"></span></div>
-      </div>
     </section>
-    <script src="js/clock.js"></script>
-    <!--Local Storage-->
-    <section id="notes-section">
+    <!-- css -->
+    <section id="css-section">
       <h1 class="subtitle is-3">
-        1.2 Local Storage
+        2.2 css
       </h1>
-      <div id="storage" class="card">
-        <div class="card-content hero is-primary" id="notes-container">
-          <div class="field">
-            <input
-              id="note_input"
-              class="input"
-              type="text"
-              style="max-width: 50%; margin-right: 20px;"
-            /><a
-              id="note_save"
-              class="button is-inverted is-primary"
-              onclick="addNote()"
-              >Save</a
-            >
-          </div>
-          <div style="margin-top: 40px"></div>
-        </div>
-      </div>
     </section>
-    <script src="js/storage.js"></script>
-    <!--Lotto-->
-    <section id="lotto-section">
-      <h1 class="subtitle is-3">1.3 Generate 6 random numbers</h1>
-      <div id="table"></div>
-      <a
-        id="generate"
-        class="button is-primary"
-        style="margin-top: 45px; font-size: 30px;"
-        >generate</a
-      >
-    </section>
-    <script src="js/lotto.js"></script>
-    <!--Wekker-->
-    <section id="wekker-section">
+    <!-- traversing -->
+    <section id="traversing-section">
       <h1 class="subtitle is-3">
-        1.4 Keukenwekker
+        2.3 traversing
       </h1>
-      <div class="card hero is-primary">
-        <div class="card-content">
-          <div class="columns">
-            <div class="column">
-              <field>
-                <label class="label" style="color: white; font-size: 22px;"
-                  >Minutes</label
-                >
-                <input
-                oninput="checkNumber(this)"
-                  min="0"
-                  max="59"
-                  id="timer_input_minutes"
-                  type="number"
-                  style="width:150px; text-align: center;"
-                  value="0"
-                />
-              </field>
-            </div>
-            <div class="column">
-              <field>
-                <label class="label" style="color: white; font-size: 22px;"
-                  >Seconds</label
-                >
-                <input
-                oninput="checkNumber(this)"
-                  min="0"
-                  max="59"
-                  id="timer_input_seconds"
-                  type="number"
-                  style="width:150px; text-align: center;"
-                  value="0"
-                />
-              </field>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column timer-btn">
-              <a
-                class="button is-primary is-inverted"
-                onclick="startTimer()"
-              >
-                start
-              </a>
-            </div>
-            <div class="column timer-btn">
-              <a
-                class="button is-danger is-inverted"
-                onclick="stopTimer()"
-              >
-                stop
-              </a>
-            </div>
-            <div class="column timer-btn">
-              <a
-                class="button is-info is-inverted"          
-                onclick="resetTimer()"
-              >
-                reset
-              </a>
-            </div>
-          </div>
-          </div>  
-        </div>
-      </div>
-      <div id="wekker" class="card">
-        <div class="card-content"><span id="wekkerTime">00:00</span></div>
-      </div>
-      <progress
-        style="margin-top: 40px;"
-        id="progress"
-        class="progress is-info"
-        value="0"
-      ></progress>
     </section>
-    <script src="js/wekker.js"></script>
-    <footer style="text-align: center">
-      This page was made by Daan Wijns
-    </footer>
+    <!-- menu -->
+    <section id="menu-section">
+      <h1 class="subtitle is-3">
+        2.4 eenvoudig inklapbaar menu
+      </h1>
+    </section>
     <script src="scrolling.js"></script>
   </body>
 </html>

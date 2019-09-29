@@ -1,52 +1,51 @@
-
 @keyframes moveTrain{
-    0%{
+    0%{ /*Erasmus*/
         left: 40px;
         top: 690px;
+        -webkit-transform: rotate(0deg);
     }
-    10%{
+    10%{/*Het rad*/
         left: 170px;
         top: 690px;
-        -webkit-transform: rotate(-45deg);
+        -webkit-transform: rotate(0deg);
     }
-    20% {
+    15% {/*Veeweide*/
         left: 200px;
         top: 656px;
         -webkit-transform: rotate(-90deg);
     }
-    30% {
+    25% {/*Beekkant*/
         left: 200px;
         top: 360px;
-        -webkit-transform: rotate(-45deg);
+        -webkit-transform: rotate(-90deg);
     }
-    40%{
-        left : 230px;
+    28% {/*Zwarte Vijvers*/
+        left: 230px;
         top: 350px;
         -webkit-transform: rotate(0deg);
     }
-    50%{
-      left:  675px;
+    70%{/*Merode*/
+        left:  675px;
       top: 350px;
-      -webkit-transform: rotate(45deg);
+      -webkit-transform: rotate(0deg);
 
     }
-    60%{
+    80%{/*Thieffry*/
         left: 695px;
         top: 370px;
         -webkit-transform: rotate(45deg);
-        
     }
-    70%{
+    85%{/*Hankar*/
         left: 760px;
         top: 495px;
         -webkit-transform: rotate(45deg);
     }
-    80%{
+    90%{/*Delta*/
         left: 810px;
         top: 510px;
         -webkit-transform: rotate(0deg);
     }
-    100%{
+    100%{/*Hermann-Debroux*/
         left: 913px;
         top: 510px;
     }
@@ -56,13 +55,15 @@
     position: relative;
 }
 
+
 #train {
     position: absolute;
     top: 690px;
     left: 40px;
-    -webkit-animation: moveTrain 10s infinite;
-    animation: moveTrain 10s infinite;
+    -webkit-animation: moveTrain 10s ease infinite;
+    -moz-animation: moveTrain 10s ease infinite;
+    animation: moveTrain 10s ease infinite;
     animation-direction: alternate;
-    
 }
+
 
