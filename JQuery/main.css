@@ -34,77 +34,14 @@ section {
     }
 }
 
-/* CLOCK */
-#clock {
-    align-content: center;
-    font-size: 100px;
-    background-image: linear-gradient( 91.9deg,  rgba(75,207,250,1) 6.3%, rgba(25,159,249,1) 98.9% );
-    border-radius: 10px;
-    text-align: center;
+/* Animate */
+#car{
+    width: 100px;
+    position: absolute;
+    z-index: 1;
 }
 
-@media only screen and (max-width: 768px){
-    #clock {
-        font-size: 50px;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-}
-
-/* Local Storage */
-#notes-container{
-    border-radius: 5px;
-}
-.note {
-    border-radius: 3px;
-    margin-top: 5px;
-}
-
-.note-content{
-    font-size: 20px;
-}
-
-@media only screen and (max-width: 768px){
-    .delete-button{
-        width: 100%;
-        margin: 0 auto 5px auto;
-    }
-}
-
-/* Wekker */
-#wekker {
-    align-content: center;
-    font-size: 100px;
-    background-image: linear-gradient( 91.9deg,  rgba(75,207,250,1) 6.3%, rgba(25,159,249,1) 98.9% );
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-
-
-
-@media only screen and (max-width: 968px){
-    #wekker {
-        font-size: 50px;
-        max-width: 80%;
-        margin: 50px auto;
-    }
-    .timer-btn{
-        margin-top: 0px;
-        padding: 3px;
-        display: inline-block;
-    }
-    .timer-btn a {
-        width: 90px;
-    }
-}
-
-@media only screen and (min-width: 1100px){
-    .timer-btn{
-        margin-top: 30px;
-    }
-    .timer-btn a{
-        width:  180px;
-    }
+#tree {
+    width: 70px;
+    position: absolute;
 }
