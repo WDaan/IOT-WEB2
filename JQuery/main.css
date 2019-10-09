@@ -4,16 +4,7 @@ html {
 }
 
 .header {
-   align-content : center;
-   text-align: center;
    margin: 50px auto;
-}
-
-
-section {
-    margin: 120px  auto;
-    width: 95%;
-    text-align: center;
 }
 
 @media only screen and (min-width: 600px){
@@ -44,4 +35,42 @@ section {
 #tree {
     width: 70px;
     position: absolute;
+}
+
+/* Traversing */
+
+
+
+
+
+
+
+/*MENU*/
+#nav {
+    width: 60%;
+    margin: 0 auto;
+}
+#nav, ul {
+    border-radius: 5px;
+    
+}
+div.content{
+    display: none;
+}
+div.title{				
+    font-weight: bold;
+    cursor: pointer;
+}
+div.title:hover{
+    font-style: italic;
+}
+
+ul, li {
+    list-style: none;
+    color: white;
+}
+
+.sublink {
+    font-size: 16px;
+    font-weight: normal;
 }

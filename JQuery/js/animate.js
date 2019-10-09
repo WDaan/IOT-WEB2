@@ -1,21 +1,31 @@
-function Drive() {
-  $("#car").animate({
-    left: "+=10%"
-  });
-  $("#tree").animate({
-    left: "-=10%"
-  });
+let interval;
 
-  if ($("#car").position().left >= $(window).width() + 150) {
-    console.log("car: ", $("#car").position());
-    $("#car").position().left = 0;
-  }
-  if ($("#tree").position().left <= -150) {
-    console.log("boom: ", $("#tree").position());
-    $("#tree").css({ left: $(window).width() + 150 });
+function Drive() {
+  $("#car").animate(
+    {
+      left: "+=10%"
+    },
+    { easing: "linear" }
+  );
+  $("#tree").animate(
+    {
+      left: "-=10%"
+    },
+    { easing: "linear" }
+  );
+
+  if ($("#tree").position().left <= -250) {
+    if (interval) clearInterval(interval);
+    $("#tree")
+      .stop(true)
+      .css({ left: $(window).width() });
+    $("#car")
+      .stop(true)
+      .css({ left: -350 });
+    Animate();
   }
 }
 
 function Animate() {
-  setInterval(Drive, 200);
+  interval = setInterval(Drive, 200);
 }

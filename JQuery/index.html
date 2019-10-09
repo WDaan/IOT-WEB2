@@ -31,7 +31,7 @@
     >
       <div class="navbar-brand">
         <div class="navbar-item">
-          <h1 class="subtitle is-3" style="color: white">Daan Wijns</h1>
+          <h1 id="nav-title">Daan Wijns</h1>
         </div>
 
         <a
@@ -75,38 +75,73 @@
     </section>
     <!-- Animate -->
     <section id="animate-section">
-      <h1 class="subtitle is-3">
+      <h2>
         2.1 Animate
-      </h1>
+      </h2>
       <div style="position: relative;">
         <img id="car" src="svg/automobile.svg" alt="car" />
         <img id="tree" src="svg/trees.svg" alt="trees" />
       </div>
       <div style="margin-top: 150px;">
-        <a id="note_save" class="button is-primary" onclick="Animate()"
-          >Animate!</a
-        >
+        <a class="button" onclick="Animate()">Animate!</a>
       </div>
     </section>
     <script src="js/animate.js"></script>
     <!-- css -->
     <section id="css-section">
-      <h1 class="subtitle is-3">
+      <h2>
         2.2 css
-      </h1>
+      </h2>
+      <a class="button" onclick="addStyle()">Style!</a>
     </section>
+    <script src="js/style.js"></script>
     <!-- traversing -->
     <section id="traversing-section">
-      <h1 class="subtitle is-3">
+      <h2>
         2.3 traversing
-      </h1>
+      </h2>
     </section>
     <!-- menu -->
     <section id="menu-section">
-      <h1 class="subtitle is-3">
+      <h2>
         2.4 eenvoudig inklapbaar menu
-      </h1>
+      </h2>
+      <nav id="nav">
+        <ul style="background-color: #80CBC4">
+          <li class="title">link 1</li>
+          <li>
+            <a class="title">link 2</a>
+            <ul
+              class="content"
+              style="display: none; background-color: #4DB6AC"
+            >
+              <li>sublink 1</li>
+              <li>sublink 2</li>
+              <li>sublink 3</li>
+            </ul>
+          </li>
+          <li>
+            <a class="title">link 3</a>
+            <ul
+              class="content"
+              style="display: none; background-color: #4DB6AC"
+            >
+              <li>sublink 1</li>
+              <li>sublink 2</li>
+              <li style="background-color: #26A69A">
+                <a class="title sublink">sublink 3</a>
+                <ul class="content" style="display: none;">
+                  <li>sub sublink 1</li>
+                  <li>sub sublink 2</li>
+                  <li>sub sublink 3</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </section>
+    <script src="js/menu.js"></script>
     <script src="scrolling.js"></script>
   </body>
 </html>
