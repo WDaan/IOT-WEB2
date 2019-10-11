@@ -1,0 +1,18 @@
+/* GLOBAL */
+html {
+    scroll-behavior: smooth;
+    width: 1000px;
+}
+
+.header {
+   align-content : center;
+   text-align: center;
+   margin: 50px auto;
+}
+
+
+section {
+    margin: 120px  auto;
+    width: 80%;
+    text-align: center;
+}
