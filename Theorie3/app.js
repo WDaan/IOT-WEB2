@@ -1,4 +1,4 @@
-const NUM_DATA_POINTS = 60;
+const NUM_DATA_POINTS = 20;
 
 const tbody = document.getElementById("tbody");
 

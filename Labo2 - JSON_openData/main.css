@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 .header {
    align-content : center;
    text-align: center;

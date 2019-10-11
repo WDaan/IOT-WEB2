@@ -1,0 +1,54 @@
+/* GLOBAL */
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+   margin: 50px auto;
+}
+
+@media only screen and (min-width: 600px){
+    section {
+        width:  60%;
+    }  
+}
+
+@media only screen and (min-width: 1600px){
+    section {
+        width:  700px;
+    }  
+}
+
+@media only screen and (max-width: 768px){
+    h1 {
+        font-size: 40px !important;
+    }
+}
+
+
+section {
+    margin: 120px  auto;
+    width: 95%;
+}
+
+ul {
+    margin: 20px auto 20px auto;
+    max-width: 70%;
+
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+li {
+    list-style: circle;
+}
+
+#nav ul li {
+    list-style: none;
+}
+#nav {
+    cursor: pointer;
+    margin-top: 50px;
+}

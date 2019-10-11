@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+      integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w="
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Nanum+Gothic:400,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="traversing.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <title>Webontwerp 2 & IOT</title>
+  </head>
+  <body>
+    <nav
+      class="navbar is-primary is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <h1 class="subtitle is-3" style="color: white">Daan Wijns</h1>
+        </div>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu is-primary">
+        <div class="navbar-end">
+          <a href="#home-section" class="navbar-item">
+            Home
+          </a>
+          <a href="#traversing-section" class="navbar-item"> traversing </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Home -->
+    <section
+      id="home-section"
+      class="section header"
+      style="text-align: center"
+    >
+      <div class="container">
+        <h1 class="title is-1">
+          JQuery!
+        </h1>
+      </div>
+    </section>
+    <!-- css -->
+    <section id="css-section">
+      <h2 class="subtitle is-3">
+        2.3 traversing
+      </h2>
+      <h2>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h2>
+
+      <p id="p-1">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa <strong>strong</strong>. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+        sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+        aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+        a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+        vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+        vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+        feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+        Curabitur ullamcorper ultricies nisi.
+      </p>
+
+      <h2 class="subtitle is-4">
+        Lorem ipsum dolor sit amet consectetuer adipiscing elit
+      </h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem.
+      </p>
+
+      <h2>Aenean commodo ligula eget dolor aenean massa</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem.
+      </p>
+
+      <ul id="ul-1">
+        <li>Lorem ipsum dolor sit amet consectetuer.</li>
+        <li>Aenean commodo ligula eget dolor.</li>
+        <li>Aenean massa cum sociis natoque penatibus.</li>
+      </ul>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem.
+      </p>
+      <nav id="nav">
+        <ul style="background-color: #80CBC4">
+          <li class="title">link 1</li>
+          <li>
+            <a class="title">link 2</a>
+            <ul
+              class="content"
+              style="background-color: #4DB6AC"
+            >
+              <li>sublink 1</li>
+              <li>sublink 2</li>
+              <li>sublink 3</li>
+            </ul>
+          </li>
+          <li>
+            <a class="title">link 3</a>
+            <ul
+              class="content"
+              style="background-color: #4DB6AC"
+            >
+              <li>sublink 1</li>
+              <li>sublink 2</li>
+              <li style="background-color: #26A69A">
+                <a class="subtitle is-6 sublink">sublink 3</a>
+                <ul class="content"">
+                  <li>sub sublink 1</li>
+                  <li>sub sublink 2</li>
+                  <li>sub sublink 3</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <a id="style" class="button">Style!</a>
+    </section>
+
+    <script>
+      $("#style").click(function() {
+        $(this).addClass("is-primary");
+        $("section").css({
+          margin: "120px  auto",
+          width: "95%",
+          "text-align": "center"
+        });
+
+        $('#nav ul li ul').find('li').css({
+            "background-color": "hsl(171, 100%, 41%)"
+        });
+
+        $('#ul-1').children().css({
+            'font-size': '20px',
+            'background-color': 'red'
+        })
+
+        $('#p-1').next().css({
+            'font-size': '40px'
+        })
+
+      });
+    </script>
+  </body>
+</html>
