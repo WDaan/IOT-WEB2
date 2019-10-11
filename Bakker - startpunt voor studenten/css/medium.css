@@ -1,0 +1,26 @@
+/* add code here */
+#titleBar{
+    font-size: 35px;  
+}
+
+#menuButton{
+    display: block;
+    cursor: pointer;
+}
+
+.navField {
+    display: none;
+    float: none;
+    text-align: left;
+    text-decoration: none;
+    color : white;
+    width: auto;
+    height: 40px;
+    overflow: hidden;
+    padding-left: 0px;
+}
+
+.navField > div {
+    line-height: 40px;
+    padding-left: 0px;
+}

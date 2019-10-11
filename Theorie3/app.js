@@ -1,4 +1,4 @@
-const NUM_DATA_POINTS = 20;
+const NUM_DATA_POINTS = 60;
 
 const tbody = document.getElementById("tbody");
 
@@ -10,6 +10,9 @@ $.getJSON(
       let trow = document.createElement("tr");
       let th = document.createElement("th");
       let tdata = document.createElement("td");
+      trow.appendChild(tdata);
+      tdata.setAttribute("align", "center");
+      tdata = document.createElement("td");
       tdata.setAttribute("align", "center");
       trow.id = i;
       trow.classList.add("trow");
@@ -28,8 +31,10 @@ const setNumbers = data => {
   $(".trow").each((index, el) => {
     let th = el.childNodes[0];
     let td = el.childNodes[1];
+    let td2 = el.childNodes[2];
 
     th.innerHTML = data[index].time;
     td.innerHTML = data[index].co2;
+    td2.innerHTML = data[index].ldr;
   });
 };

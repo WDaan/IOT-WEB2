@@ -1,0 +1,14 @@
+/* add code here */
+html {
+    padding: 10px;
+}
+
+#titleBar{
+    padding: 10px;
+    font-size: 30px;
+    line-height: 40px;   
+}
+
+#titleBar > a > img {
+    height: 40px;
+}

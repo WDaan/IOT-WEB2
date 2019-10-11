@@ -1,0 +1,25 @@
+/* add code here */
+html {
+    padding: 5px;
+}
+
+#titleBar{
+    font-size: 25px;
+}
+
+#titleBar > a > img {
+    height: 70px;
+}
+
+#dkb{
+    display: block;
+}
+
+#footerName{
+    display: none;
+}
+
+footer > ul > li:last-of-type {
+    text-align: center;
+    width: 100%;
+}
