@@ -1,0 +1,43 @@
+/* GLOBAL */
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+   align-content : center;
+   text-align: center;
+   margin: 50px auto;
+}
+
+
+section {
+    margin: 120px  auto;
+    width: 95%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+    section {
+        width:  60%;
+    }  
+}
+
+@media only screen and (min-width: 1600px){
+    section {
+        width:  700px;
+    }  
+}
+
+@media only screen and (max-width: 768px){
+    h1 {
+        font-size: 40px !important;
+    }
+}
+
+.red {
+    background-color: hsl(348, 100%, 61%);
+}
+
+.green {
+    background-color: hsl(141, 71%, 48%);
+}

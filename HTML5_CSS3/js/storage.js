@@ -85,7 +85,7 @@ function drawNote(note) {
 
 function saveToLocalStorage(note_content) {
   //if there are no notes yet
-  if (localStorage.getItem("notes") === null) {
+  if (localStorage.getItem("notes") == null) {
     let id = 0;
     let notes = [];
     const note = new Note(id, note_content);

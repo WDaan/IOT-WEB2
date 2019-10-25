@@ -1,0 +1,11 @@
+.greyBackground {
+ background-color: hsl(0, 0%, 86%);
+}
+
+.blueBackground {
+    background-color: hsl(204, 86%, 53%);
+}
+
+.redBackground {
+    background-color: hsl(348, 100%, 61%);
+}
