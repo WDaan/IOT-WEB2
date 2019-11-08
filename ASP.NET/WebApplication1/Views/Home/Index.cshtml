@@ -1,0 +1,26 @@
+﻿@{ //TODO 04: View Toevoegen...
+    //hier komt C# code
+    //view koppelen met IEnumerable of string
+}
+
+@model IEnumerable<string>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo1 ASP.NET Core MVC</title>-
+</head>
+<body>
+    <ul>
+        @foreach (string s in Model)
+        {
+            <li>@s</li>
+        }
+    </ul>
+</body>
+</html>
