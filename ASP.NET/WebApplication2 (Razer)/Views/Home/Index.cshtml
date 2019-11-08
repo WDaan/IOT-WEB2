@@ -1,0 +1,38 @@
+﻿@*Versie 1: zonder shared layout.*@
+
+
+@model WebApplication2__Razer_.Models.Product
+
+@{
+    //TODO 03: View zonder shared layout
+    //Layout = null;
+}
+
+@*<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Working with razer</title>
+    </head>
+    <body>
+        @Model.Name
+    </body>
+    </html>*@
+
+
+@{
+    //TODO 04: View met shared layout
+}
+@*
+    Versie 2: met shared layout.
+*@
+
+
+@{
+    ViewBag.Title = "Product name..."; //title van de pagina
+}
+
+<div data-ProductID="@Model.ProductID" data-Stocklevel="@ViewBag.StockLevel">
+    <div>Product name: @Model.Name</div>
+    <div>Product Price: @($"{Model.Price:C2}")</div>
+    <div>Stock Level: @ViewBag.StockLevel</div>
+</div>
