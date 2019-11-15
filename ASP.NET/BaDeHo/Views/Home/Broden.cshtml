@@ -1,0 +1,23 @@
+﻿@{
+//TODO 11: Add Razor View voor Broden
+}
+
+@model List<BaDeHo.Models.Brood>
+
+<div class="container">
+    <div class="row">
+        @foreach (BaDeHo.Models.Brood brood in Model)
+        {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card" data-id="@brood.ID">
+                <img class="card-img-top" src="~/images/@brood.FotoLocatie" alt="@brood.Naam">
+                <div class="card-body">
+                    <h4 class="card-title">@brood.Naam</h4>
+                    <p class="card-text" style="height:90px;">@brood.Beschrijving</p>
+                    <a href="#" class="btn btn-primary">Bestel &euro; @brood.Prijs</a>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
