@@ -1,0 +1,70 @@
+﻿<Window x:Class="WebApiFireAlarmTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebApiFireAlarmTester"
+        mc:Ignorable="d"
+        Title="Web API Fire Alarm Tester" Height="450" Width="800">
+    <DockPanel LastChildFill="True">
+        <GroupBox Header="GET" DockPanel.Dock="Top">
+            <Button Content="GET" Name="btnGet" Click="btnGet_Click"/>
+        </GroupBox>
+        <GroupBox Header="POST" DockPanel.Dock="Top">
+            <StackPanel>
+                <Button Content="POST" Name="btnPost" Click="btnPost_Click" />
+                <TextBox Name="tbxLocationPost" Text="Location" GotFocus="tbx_GotFocus"/>
+                <ComboBox Name="cbxReasonPost">
+                    <ComboBoxItem>smoke detected</ComboBoxItem>
+                    <ComboBoxItem>too hot</ComboBoxItem>
+                    <ComboBoxItem>too windy</ComboBoxItem>
+                    <ComboBoxItem>automatic fire extinguishing started</ComboBoxItem>
+                    <ComboBoxItem>unknown</ComboBoxItem>
+                </ComboBox>
+                <CheckBox x:Name="cbxActivePost">Active</CheckBox>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="PUT" DockPanel.Dock="Top">
+            <StackPanel>
+                <Button Content="PUT" Grid.Column="0" x:Name="btnPut" Click="btnPut_Click" />
+                <TextBox x:Name="tbxIdPut" GotFocus="tbx_GotFocus">ID</TextBox>
+                <TextBox Name="tbxLocationPut" GotFocus="tbx_GotFocus">Location</TextBox>
+                <ComboBox Name="cbxReasonPut">
+                    <ComboBoxItem>smoke detected</ComboBoxItem>
+                    <ComboBoxItem>too hot</ComboBoxItem>
+                    <ComboBoxItem>too windy</ComboBoxItem>
+                    <ComboBoxItem>automatic fire extinguishing started</ComboBoxItem>
+                    <ComboBoxItem>unknown</ComboBoxItem>
+                </ComboBox>
+                <CheckBox x:Name="cbxActivePut">Active</CheckBox>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="DELETE" DockPanel.Dock="Top">
+            <StackPanel>
+                <Button Name="btnDelete" Click="btnDelete_Click" Content="DELETE" />
+                <TextBox x:Name="tbxIdDelete" Text="ID" GotFocus="tbx_GotFocus"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Data" DockPanel.Dock="Top">
+            <ListView Name="lstFireAlarms" Margin="0,0,0,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <TextBlock Text="Id: " FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Id}"/>
+                            <TextBlock Text=",  Location: " FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Location}"/>
+                            <TextBlock Text=",  Reason: " FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Reason}"/>
+                            <TextBlock Text=",  Active: " FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Active}"/>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </GroupBox>
+    </DockPanel>
+</Window>
