@@ -1,0 +1,44 @@
+/* GLOBAL */
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+   align-content : center;
+   text-align: center;
+   margin: 50px auto;
+}
+
+
+section {
+    margin: 120px  auto;
+    width: 95%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+    section {
+        width:  30%;
+    }  
+}
+
+@media only screen and (min-width: 1600px){
+    section {
+        width:  300px;
+    }  
+}
+
+@media only screen and (max-width: 768px){
+    h1 {
+        font-size: 40px !important;
+    }
+}
+
+
+.card {
+    margin-top: 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}

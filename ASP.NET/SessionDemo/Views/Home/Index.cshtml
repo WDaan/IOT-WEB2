@@ -1,0 +1,16 @@
+﻿@model  SessionDemo.Models.Login;
+
+@{ 
+    //TODO 07: View opmaken
+}
+
+@*Zie: https://getbootstrap.com/docs/4.0/examples/signin/*@
+<form class="form-signin" asp-controller="Home" asp-action="Index" method="post">
+    <h2 class="form-signin-heading">Aanmelden</h2>
+    <input type="email" id="inputEmail" class="form-control mt-3" placeholder="e-mail adres"
+           required autofocus asp-for="Email">
+    <input type="password" id="inputPassword" class="form-control mt-3" placeholder="wachtwoord"
+           required asp-for="Password">
+
+    <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Aanmelden</button>
+</form>
