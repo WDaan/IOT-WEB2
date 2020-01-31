@@ -15,21 +15,18 @@ namespace WebApplication2__Razer_.Controllers
 
         public ViewResult Index()
         {
-            Product product = new Product
-            {
-                ProductID = 1,
-                Name = "Kayak",
-                Description = "A boat for one person.",
-                Category = "Watersports",
-                Price = 275M
+                List<Electricstep> steps = new List<Electricstep>() {
+                new Electricstep() {
+                ID = 1,
+                Location = new Coordinates() { Latitude=12.5876, Longitude=27.6472, Altitude=0 },
+                Type = "Turbo 2.0",
+                PricePerHour = 3.5,
+                LastRented= new DateTime()
+                }
             };
 
-            //Gebruik het standaard 'overkoepelend' object
-            //en voeg zelf properties toe... Zoals StockLevel.
-            ViewBag.StockLevel = 2;
-
-            //product meegeven aan view
-            return View(product);
+            //steps meegeven aan view
+            return View(steps);
         }
     }
 }
